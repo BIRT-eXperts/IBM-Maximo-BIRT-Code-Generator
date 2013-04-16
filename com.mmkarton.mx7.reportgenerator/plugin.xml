@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="org.eclipse.birt.report.designer.ui.wizard.category"
+            class="com.mmkarton.mx7.reportgenerator.wizards.BIRTReportWizard"
+            finalPerspective="org.eclipse.birt.report.designer.ui.ReportPerspective"
+            icon="icons/maximo16.gif"
+            id="com.mmkarton.mx7.reportgenerator.wizards.BIRTReportWizard"
+            name="MAXIMO Report"
+            project="false">
+         <description/>
+      </wizard>
+      <wizard
+            category="org.eclipse.birt.report.designer.ui.wizard.category"
+            class="com.mmkarton.mx7.reportgenerator.wizards.BIRTDataSetWizard"
+            finalPerspective="org.eclipse.birt.report.designer.ui.ReportPerspective"
+            hasPages="true"
+            icon="icons/data_set.gif"
+            id="com.mmkarton.mx7.reportgenerator.wizards.BIRTDataSetWizard"
+            name="MAXIMO Report DataSet"
+            project="false">
+         <description/>
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.mmkarton.mx7.reportgenerator.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   
+</plugin>
